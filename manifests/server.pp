@@ -27,6 +27,7 @@ class puppet::server (
   $post_hook_name      = $puppet::params::post_hook_name,
   $agent_template      = $puppet::params::agent_template,
   $master_template     = $puppet::params::master_template,
+  $librarian_path      = $puppet::params::librarian_path,
   $version             = $puppet::params::version
 ) inherits puppet::params {
   class { 'puppet::server::install': }~>

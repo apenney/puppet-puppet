@@ -6,7 +6,6 @@ class puppet (
   $ca                  = $puppet::params::ca,
   $passenger           = $puppet::params::passenger,
   $port                = $puppet::params::port,
-  $librarian_path      = $puppet::params::librarian_path,
   $listen              = $puppet::params::listen,
   $pluginsync          = $puppet::params::pluginsync,
   $splay               = $puppet::params::splay,
