@@ -29,6 +29,9 @@ class puppet::server (
   $master_template     = $puppet::params::master_template,
   $version             = $puppet::params::version
 ) inherits puppet::params {
+
+  include '::puppet'
+
   class { 'puppet::server::install': }~>
   class { 'puppet::server::config':  }~>
   class { 'puppet::server::service': }
