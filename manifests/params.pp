@@ -12,6 +12,7 @@ class puppet::params {
   $ca                  = true
   $passenger           = true
   $port                = 8140
+  $librarian_path      = ''
   $listen              = false
   $pluginsync          = true
   $splay               = false
